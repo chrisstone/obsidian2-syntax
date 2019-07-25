@@ -2,7 +2,7 @@
   "name": "obsidian2-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "Obsidian2, inspired by Obsidian v2 for Notepad++ (by Joni Eskelinen)",
+  "description": "Obsidian2 for Atom, inspired by Obsidian v2 for Notepad++ (by Joni Eskelinen)",
   "keywords": [
     "syntax",
     "theme"
