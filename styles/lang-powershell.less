@@ -1,26 +1,23 @@
 // Syntax styles for PowerShell
 
 .syntax--comment {
-	color: #00FF00;
+	color: @syntax-green;
 
 	&.syntax--block, .syntax--documentation {
 		color: darken(@syntax-text-color, 25%) !important;
 	}
 }
 
-// Functions
 .syntax--function .syntax--type {
 	font-weight: bold;
 }
-
 
 .syntax--keyword.syntax--operator {
 	color: darken(@syntax-text-color, 25%);
 }
 
-
 .syntax--constant {
-	color: #678CB1;
+	color: @syntax-blue;
 
 	&.syntax--character.syntax--escape {
 		color: darken(@syntax-text-color, 25%);
@@ -28,11 +25,11 @@
 }
 
 .syntax--invalid.syntax--illegal {
-	color: #C40062;
+	color: @syntax-red;
 }
 
 .syntax--string {
-	color: #EC7600;
+	color: @syntax-orange;
 }
 
 .syntax--hyperlink {
@@ -41,6 +38,6 @@
 
 .syntax--punctuation {
 	&.syntax--braces, &.syntax--group, &.syntax--bracket {
-		color: #E8E2B7;
+		color: @syntax-yellow;
 	}
 }
