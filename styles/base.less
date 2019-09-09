@@ -81,6 +81,60 @@ atom-text-editor[mini] .scroll-view {
 	padding-left: 1px;
 }
 
+// Default Look
+
+.syntax--comment {
+	color: @syntax-green;
+
+	.syntax--documentation {
+		color: darken(@syntax-text-color, 25%) !important;
+	}
+}
+
+.syntax--control {
+	color: @syntax-green-dim;
+}
+// syntax--keyword
+
+.syntax--type {
+	color: white;
+}
+.syntax--function {
+	font-weight: 900;
+}
+
+.syntax--keyword.syntax--operator {
+	color: darken(@syntax-text-color, 25%);
+}
+
+.syntax--constant {
+	color: @syntax-blue;
+
+	&.syntax--character.syntax--escape {
+		color: darken(@syntax-text-color, 25%);
+	}
+}
+
+.syntax--invalid {
+	color: @syntax-red;
+}
+// .syntax--illegal
+
+.syntax--string {
+	color: @syntax-orange;
+}
+
+.syntax--hyperlink {
+	border-bottom: 1px solid;
+}
+
+.syntax--punctuation {
+	&.syntax--braces, &.syntax--group, &.syntax--bracket {
+		color: @syntax-yellow;
+	}
+}
+
+
 // Language definitions
 .powershell {
 	@import "lang-powershell";
@@ -90,4 +144,10 @@ atom-text-editor[mini] .scroll-view {
 }
 .json {
 	@import "lang-json";
+}
+.yaml {
+	@import "lang-yaml";
+}
+.javascript {
+	@import "lang-javascript";
 }

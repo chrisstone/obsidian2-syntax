@@ -3,12 +3,12 @@
 //Cursor
 @syntax-cursor-color: white;
 //General Text
-@syntax-text-color: #E0E2E4;
-@syntax-background-color: #293134;
+@syntax-text-color: @syntax-white-off;
+@syntax-background-color: @syntax-blue-deep;
 //Selection Text
-@syntax-select-back-color: #C40062;
+@syntax-select-back-color: @syntax-pink;
 //Current line
-@syntax-current-back-color: #2F393C;
+@syntax-current-back-color: lighten(@syntax-background-color, 3%);
 
 // Guide colors
 @syntax-wrap-guide-color: darken(@syntax-background-color, 3%);
@@ -17,7 +17,7 @@
 
 // Gutter colors
 @syntax-gutter-background-color: #3F4B4E;
-@syntax-gutter-background-color-selected: lighten(@syntax-gutter-background-color, 10%);
+@syntax-gutter-background-color-selected: lighten(@syntax-gutter-background-color, 3%);
 @syntax-gutter-text-color: #81969A;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 @syntax-gutter-fold-icon: red;
